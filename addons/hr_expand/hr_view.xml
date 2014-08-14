@@ -1,0 +1,800 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+		<record model="ir.ui.view" id="view_he_employee_inherit_form">
+			<field name="name">hr.employee.form.inherit</field>
+			<field name="model">hr.employee</field>
+			<field name="inherit_id" ref="hr.view_employee_form"/>
+			<field name="arch" type="xml">
+				<notebook  position="replace">
+				        <notebook>
+                            <page string="Personal Infomation" groups="base.group_hr_user">
+                                <group>
+                                    <group string="Contact Information">
+										
+                                      	<field name="other_name" />
+                                      	<field name="birthday" on_change="onchange_birthday(birthday)" />
+										 <field name="bd_year" invisible ="1"/>
+										 <field name="bd_month" invisible ="1"/>
+										 <field name="bd_date" invisible ="1"/>
+                                        <field name="gender"/>
+                                     
+										<field name="birthplace_id_txt" /> 
+										<field name="hometown_id_txt"/>
+                                        <field name="ethnic_id" />
+										<field name="religion_id" />
+										<field name="permanent_address_id_txt"  context="{'show_address': 1}" options='{"always_reload": True, "highlight_first_line": True}'/>
+										<field name="address_home_id_txt" context="{'show_address': 1}" options='{"always_reload": True, "highlight_first_line": True}'/>
+										<!-- <field name="user_id" on_change="onchange_user(user_id)" string="Related User"/> -->
+										<field name="company_id" groups="base.group_multi_company" on_change="onchange_company(company_id)"/>
+										
+                                        
+                                    </group>
+                                    <group string="Job Information">
+										<field name="address_id" on_change="onchange_address_id(address_id)" context="{'show_address': 1}" options='{"always_reload": True, "highlight_first_line": True}'/>
+                                        <field name="work_email" widget="email"/>
+                                        <field name="work_phone"/>
+                                        <field name="mobile_phone"/>
+                                        <field name="work_location"/>
+										
+									   <field name="last_job"/> # nghe nghiep khi duoc tuyen dung
+                            		   <field name="recruitment_date"/> # ngày tuyển dụng
+                            		    
+                            		    <field name="recruitment_agency" /> 
+										<!-- <field name="job_id" options='{"no_open": True}' domain="[('state','!=','old')]" context="{'form_view_ref': 'hr.view_hr_job_employee_form'}"/> -->
+                            		    <field name="key_task" /> # công việc chính
+										<field name="job_id_m"  colspan="4" >
+										
+										
+											<form string="Job Form">
+												<sheet>
+													
+													<group>
+														
+														<group>
+															<field name="company_id" widget="selection" groups="base.group_multi_company"/>
+															<field name="department_id"/>                            
+														</group>
+													</group>
+													<div>
+														<label for="description"/>
+														<field name="description"/>
+													</div>
+													<div>
+														<label for="requirements"/>
+														<field name="requirements"/>
+													</div>
+												</sheet>
+											</form>
+											<tree string="Job Tree" editable="bottom">
+												<field name="job_position"/>
+												<field name="department_id"/>
+												<field name="company_id" groups="base.group_multi_company"/>
+												
+											</tree>
+										</field>
+										
+										
+									
+									
+                                        
+                                        <field name="salary" colspan="4"></field>
+										
+										
+										
+                                    
+									
+                                    </group>
+                                   
+									
+                                    
+                                </group>
+                            </page>
+                            
+                              <page string="Public Information">
+                            		<group>
+                            		    <group string="Educations"  >
+                            		       <field name="general_education"  placeholder="Đã tốt nghiệp lớp mấy/thuộc hệ nào"/>
+										   <field name="highest_diploma"  placeholder="TSKH,TS, ThS..."/>
+										   <field name="political_theory"  />
+										   <field name="state_management" placeholder="Chuyên viên cao cấp,chuyên viên chính..."/>
+										   <field name="foreign_language"  placeholder="Tên ngoại ngữ + Trình độ A,B,C.."/>
+										   <field name="it" placeholder="Trình độ A,B,C "/>
+                            		    </group>
+                            		
+                            		   
+										<!-- code added by Hoang Pham -->
+										<group string="Join CP">
+											<field name="CP_join_date" /> # Ngay vao dang CS
+											<field name="CP_official_join_date" /> # Ngay chinh thuc
+										</group>
+										<group string="Sociopolitical Organization">
+											<field name="sociopolitical_organization_id" /> # To chuc chinh tri xa hoi
+											<field name="sopo_organization_join_date" /> # NGay gia nhap
+										</group>
+										<group string="Army">
+											<field name="enlistment_date" /> # Ngay nhap ngu	
+											<field name="demobilized_date"/> # Ngay xuat ngu
+											<field name="highest_army_rank_id"/> # Quan ham cao nhat
+											<field name="highest_reward_rank"  placeholder="Anh hùng lao động, anh hùng lực lưỡng vũ trang..."/> # Danh hieu phong tang cao nhat
+											<field name="major"></field>
+										</group>
+										<group string="Reward  &amp; Punishment">
+										    
+										    <field name="reward" >
+											<tree string="Reward  Tree" editable="top">
+													<field name="name" />
+												   <field name="year" />
+												<field name="Document" ></field>
+													
+											</tree>
+											</field>
+										    <field name="punishment">
+											<tree string="Punishment  Tree" editable="top">
+													<field name="name" />
+												   <field name="year" />
+												<field name="Document" ></field>
+													
+											</tree>
+											</field>
+										</group>
+										 <group string ="Health" name="health_group">
+                                          <field name="health"></field>
+                                   		 </group> 
+                                   
+									
+                                    
+                                     <group string ="Wound" name="wound_group">
+                                          <field name="wound"></field>
+                                    </group>
+									 <group string ="Identification ID" name="identification_id_group">
+												<field name="identification_id" />
+												<field name="date" />
+												<field name="sinid"/>
+												
+									</group>
+								
+                            		</group>  
+                            		 
+                              </page>
+                              
+                              <page string="Work and History">
+							  
+                                   <group string ="Training" name="training_group">
+										<field name="training_id" colspan="6" />
+                                       
+                                   </group>
+                                   
+                                    <group string ="Works" name="works_group">
+										<field name="works_id" colspan="6" />
+                                       
+                                   </group>
+                                    <group  >
+										<field name="work_history" colspan="6" >
+											
+										
+                                       </field>
+                                   </group>
+                                    
+	                                 <group string ="History" name="history_group">
+	                                         <field name="detention"  placeholder="Bị bắt giam tù đày ở đâu, đã khai báo cho những ai vấn đề gì?..." colspan="6"></field>
+	                                          <field name="rw_frcompany"  placeholder="Có quan hệ với tổ chức chính trị kinh tế, xã hội..." colspan="6"></field>
+	                                          <field name="rw_frperson"  placeholder="Có thân nhân ở nước ngoài(làm gì, địa chỉ...)" colspan="6"></field>
+	                                  </group>
+	                                  
+	                                 <group string="Relationship">
+	                                     	<field name="relationship_id" colspan="4" />
+	                                     
+	                                     
+	                                 </group>
+	                                 <group string="Salarys">
+	                                     	<field name="salarys_id" colspan="4" >
+												<tree editable="bottom" string="Salary">
+													<field name="date"/>
+													<field name="wage"/>
+													<field name="cost"/>
+												</tree>
+											</field>
+	                                 </group>
+                                    
+	                                 
+	                                  <group string ="Comment" name="comment_group">
+                                          <field name="comment"  placeholder="Nhận xét, đánh giá của cơ quan, đơn vị quản lý" colspan="6" height="200"></field>
+                                    </group>
+                                  
+                              </page> 
+							 <!-- <page string="Report" groups="base.group_hr_user">
+                                <group>
+                                    <group string="Report" name="report_group">
+                                      
+									  
+										
+										<field name="education_id" colspan="6" />
+										 <field name="work"  colspan="3"></field>
+									  
+                                    </group>
+									
+                                </group>
+                            </page> -->
+                            <page string="Setup" groups="base.group_hr_user">
+                                <group>
+                                    <group string="Active" name="active_group">
+                                        <field name="active"/>
+										
+										
+										<field name ="coach_id" invisible="1"/>
+										
+										<field name ="marital" invisible="1"/>
+										<field name="bank_account_id" invisible="1"/>
+									
+                                    </group>
+									<group>
+                                        <field name="company_id" groups="base.group_multi_company" on_change="onchange_company(company_id)"/>
+                                        
+                                    </group>
+                                </group>
+                            </page>
+                        
+							
+						</notebook>
+				</notebook>
+			</field>
+		</record>
+	
+
+			<!-- Employee Punishment Form View -->
+        
+	        <record id="view_hr_employee_punishment_form" model="ir.ui.view">
+	            	<field name="name">hr.punishment.employee.form</field>
+	            	<field name="model">hr.punishment</field>
+	            	<field name="type">form</field>
+	            	<field name="arch" type="xml">
+	              
+	                	<form string="Employee Punishment Form" >
+		                    <field name="name" />
+		                    <field name="year" />
+		                    
+		                   
+	                 
+	                	</form>
+	            	</field>
+	        </record>
+        
+        <!-- Employee Reward Form View -->
+        
+	        <record id="view_hr_employee_reward_form" model="ir.ui.view">
+	            	<field name="name">hr.reward.employee.form</field>
+	            	<field name="model">hr.reward</field>
+	            	<field name="type">form</field>
+	            	<field name="arch" type="xml">
+	              
+	                	<form string="Employee Reward Form" >
+		                    <field name="name" />
+		                    <field name="year" />
+		                    
+		                   
+	                 
+	                	</form>
+	            	</field>
+	        </record>
+	       
+        <!-- Empployee Health Form View -->
+        	<record id="view_hr_employee_health_form" model="ir.ui.view">
+            	<field name="name">hr.employee.health.form</field>
+            	<field name="model">hr.health</field>
+            	<field name="type">form</field>
+            	<field name="arch" type="xml">
+              
+                	<form string="Employee Health Form">
+	                    <field name="name" />
+	                    <field name="height"/>
+	                    <field name="weight"></field>
+	                    <field name="blood"></field>
+	                    
+	                   
+                 
+                	</form>
+            	</field>
+        	</record>
+       
+         <!-- Employee Would Form View -->
+        	<record id="view_hr_employee_wound_form" model="ir.ui.view">
+            	<field name="name">hr.employee.wound.form</field>
+            	<field name="model">hr.wound</field>
+            	<field name="type">form</field>
+            	<field name="arch" type="xml">
+              
+                	<form string="Employee Wound Form"> 
+	                    <field name="name" />
+	                    <field name="type" />
+	                   
+	                    
+	                   
+                 
+                	</form>
+            	</field>
+        	</record>
+     
+		
+		<!-- Works Form-->
+		<record id="view_hr_employee_works_tree" model="ir.ui.view">
+            <field name="name">hr.employee.works.tree</field>
+            <field name="model">hr.works</field>
+            <field name="arch" type="xml">
+                <tree string="Working " editable="top">
+                  
+	 					
+	 					 
+	                   
+	                    <field name="from_time" ></field>
+	                    <field name="to_time" ></field>
+						 <field name="note" ></field>
+                </tree>
+            </field>
+        </record>
+		
+		
+		<!-- Works Tree-->
+        <record id="view_hr_employee_works_form" model="ir.ui.view">
+            <field name="name">hr.employee.works.form</field>
+            <field name="model">hr.works</field>
+            <field name="arch" type="xml">
+                <form string="Working " version="7.0">
+                    <group>
+                          <field name="from_time" ></field>
+	                    <field name="to_time" ></field>
+						 <field name="note" ></field>
+	                   
+                    </group>
+                </form>
+            </field>
+        </record>
+		<!-- Work History -->
+		<record id="view_hr_employee_work_his_tree" model="ir.ui.view">
+            <field name="name">hr.employee.work.his.tree</field>
+            <field name="model">hr.work.history</field>
+            <field name="arch" type="xml">
+                <tree string="Work History " editable="top">
+                  
+	 					
+	 					 
+	                   
+	                    <field name="date" ></field>
+	                    <field name="type_work" ></field>
+						<field name="note" ></field>
+						 
+                </tree>
+            </field>
+        </record>
+		
+		<!-- Training Tree-->
+		<record id="view_hr_employee_training_tree" model="ir.ui.view">
+            <field name="name">hr.employee.training.tree</field>
+            <field name="model">hr.training</field>
+            <field name="arch" type="xml">
+                <tree string="Training  Tree" editable="top">
+						
+						<field name="school" widget="selection" />
+	 					<field name="major" ></field>
+						<field name="name" widget="selection"/>
+	                    <field name="from_time" ></field>
+	                    <field name="to_time" ></field>
+						<field name="training_form" ></field>
+	                    <field name="diploma" ></field>
+						<field name="level_school" ></field>
+						<field name="Document" ></field>
+						
+                </tree>
+            </field>
+        </record>
+		<!-- Training Form-->
+        <record id="view_hr_employee_training_form" model="ir.ui.view">
+            <field name="name">hr.employee.training.form</field>
+            <field name="model">hr.training</field>
+            <field name="arch" type="xml">
+                <form string="Training Form " version="7.0">
+                    <group>
+                       <field name="school" />
+	 					<field name="major" ></field>
+	                    <field name="from_time" ></field>
+	                    <field name="to_time" ></field>
+						<field name="training_form" ></field>
+	                    <field name="diploma" ></field>
+	                   
+                    </group>
+                </form>
+            </field>
+        </record>
+		
+		
+		
+		
+		
+		<record id="view_hr_employee_tree_tree" model="ir.ui.view">
+            <field name="name">hr.employee.salary.tree</field>
+            <field name="model">hr.salary</field>
+            <field name="arch" type="xml">
+                <tree string="Salary Tree View " editable="top">
+						
+	                    <field name="name" />
+	                    <field name="wage" ></field>
+	                    <field name="cost" ></field>
+						<field name="date" />
+	                    <field name="allowance" ></field>
+	                    <field name="other_allowance"></field>
+	                   
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_hr_employee_salary_form" model="ir.ui.view">
+            <field name="name">hr.employee.salary.form</field>
+            <field name="model">hr.salary</field>
+            <field name="arch" type="xml">
+                <form string="Salary Form " version="7.0">
+                    <group>
+                      
+	                    <field name="name" />
+	                    <field name="wage" ></field>
+	                    <field name="cost" ></field>
+						 <field name="date" />
+	                    <field name="allowance" ></field>
+	                    <field name="other_allowance"></field>
+	                   
+                    </group>
+                </form>
+            </field>
+        </record>
+		
+		<record id="view_hr_employee_salarys_tree" model="ir.ui.view">
+            <field name="name">hr.employee.salarys.tree</field>
+            <field name="model">hr.salarys</field>
+            <field name="arch" type="xml">
+                <tree string="Salary Tree View " editable="top">
+						<field name="date" />
+	                    <field name="name" />
+	                    <field name="wage" ></field>
+	                    <field name="cost" ></field>
+	                   
+	                   
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_hr_employee_salarys_form" model="ir.ui.view">
+            <field name="name">hr.employee.salarys.form</field>
+            <field name="model">hr.salarys</field>
+            <field name="arch" type="xml">
+                <form string="Salary Form " version="7.0">
+                    <group>
+                       <field name="date" />
+	                    <field name="name" />
+	                    <field name="wage" ></field>
+	                    <field name="cost" ></field>
+	                   
+	                   
+                    </group>
+                </form>
+            </field>
+        </record>
+		
+		
+			<!-- Employee Education Form View -->
+        <record id="view_hr_education_form" model="ir.ui.view">
+			<field name="name">hr.education.form</field>
+			<field name="model">hr.education</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Education">
+				    <field name="diploma_id" />
+					<field name="school_id" />
+				    <field name="from_time" />
+				    <field name="to_time" />
+				    <field name="training_form_id" />
+				</form>
+			</field>
+		</record>
+        
+			<!-- Employee Education Tree View -->
+        <record id="view_hr_education_tree" model="ir.ui.view">
+			<field name="name">hr.education.tree</field>
+			<field name="model">hr.education</field>
+			<field name="type">tree</field>
+			<field name="arch" type="xml">
+				<tree string="">
+				    <field name="diploma_id"/>
+				</tree>
+			</field>
+		</record>
+        
+			<!-- Employee Diploma Form View -->
+        <record id="view_hr_diploma_form" model="ir.ui.view">
+			<field name="name">hr.diploma.form</field>
+			<field name="model">hr.diploma</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Diploma">
+					<field name="major_id" />
+					<field name="diploma_level_id" />
+				</form>
+			</field>
+		</record>
+        
+			
+			
+		<!-- Relation Tree-->
+		<record id="view_hr_relationship_tree" model="ir.ui.view">
+            <field name="name">hr.relationship.tree</field>
+            <field name="model">hr.relationship</field>
+            <field name="arch" type="xml">
+                <tree string="Relationship  Tree" editable="top">
+						 <field name="relationship_type_id" />
+                       <field name="full_name" />
+					<field name="birth_date" />
+				  
+				    <field name="additional_information" />
+						
+                </tree>
+            </field>
+        </record>
+		<!-- Relationship Form-->
+        <record id="view_hr_relationship_form" model="ir.ui.view">
+            <field name="name">hr.relationship.form</field>
+            <field name="model">hr.relationship</field>
+            <field name="arch" type="xml">
+                <form string="Relationship Form " version="7.0">
+                    <group>
+					  <field name="relationship_type_id" />
+                       <field name="full_name" />
+					<field name="birth_date" />
+				  
+				    <field name="additional_information" />
+	                   
+                    </group>
+                </form>
+            </field>
+        </record>
+		
+		
+        <record id="view_hr_relationship_type_form" model="ir.ui.view">
+			<field name="name">hr.relationship_type.form</field>
+			<field name="model">hr.relationship_type</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Relationship">
+					<field name="type" />
+					<field name="in_law" />
+				</form>
+			</field>
+		</record>
+        
+		
+			<!-- Employee District Form View -->
+			
+        <record id="view_hr_district_form" model="ir.ui.view">
+			<field name="name">hr.district.form</field>
+			<field name="model">hr.district</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="District">
+					<field name="district"/>
+					<field name="province_id" />
+				</form>
+			</field>
+		</record>
+        
+		
+		
+			<!-- Employee Wards Form View -->
+			
+        <record id="view_hr_wards_form" model="ir.ui.view">
+			<field name="name">hr.wards.form</field>
+			<field name="model">hr.wards</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Ward">
+					<field name="wards" />
+					<field name="district_id" />
+				</form>
+			</field>
+		</record>
+        <!--
+		<record id="view_hr_wards_form" model="ir.ui.view">
+			<field name="name">hr.wards.form</field>
+			<field name="model">hr.wards</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Birth place">
+				 <label for="street" string="Address"/>
+				<div>
+					<field name="wards" placeholder="Ward..." />
+					<field name="district_id" placeholder="District..." />
+				</div>
+				</form>
+			</field>
+		</record>
+		-->
+			<!-- Employee Address Form View -->
+        <record id="view_hr_address_form" model="ir.ui.view">
+			<field name="name">hr.address.form</field>
+			<field name="model">hr.address</field>
+			<field name="type">form</field>
+			<field name="arch" type="xml">
+				<form string="Address">
+					<field name="number" />
+					<field name="street" />
+					<field name="wards_id" />
+				</form>
+			</field>
+		</record>
+		<!-- Department Tree View -->
+		
+		<record id="view_department_expand_tree" model="ir.ui.view">
+            <field name="name">hr.department.tree</field>
+            <field name="model">hr.department</field>
+            <field name="field_parent">child_ids</field>
+            <field name="arch" type="xml">
+                <tree string="Companies">
+                    <field name="name"/>
+                    
+                </tree>
+            </field>
+        </record>
+		<record id="department_category_action_expand" model="ir.actions.act_window">
+            <field name="name">Department</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.department</field>
+            <field name="domain">[('parent_id','=',False)]</field>
+            <field name="view_type">tree</field>
+            <field name="view_id" ref="view_department_expand_tree"/>
+            <field name="help" type="html">
+              
+            </field>
+        </record>
+        <menuitem name="Department"
+            action="department_category_action_expand"
+            id="menu_department_category"
+			sequence="1" parent="hr.menu_hr_main" />
+			
+			
+		<!-- Employee by Department -->
+		
+		<record id="employee_by_department_action_tree" model="ir.actions.act_window">
+            <field name="name">Employees</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.employee</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">kanban,tree,form</field>
+			<field name="domain">[('job_id_m.department_id','child_of',active_id)]</field>
+			<field name="context">{'job_id_m.department_id':active_id}</field>
+        </record>
+        <record id="ir_employee_department_open" model="ir.values">
+            <field eval="'tree_but_open'" name="key2"/>
+            <field eval="'hr.department'" name="model"/>
+            <field name="name">Employees by Department</field>
+            <field eval="'ir.actions.act_window,%d'%employee_by_department_action_tree" name="value"/>
+        </record>
+	
+	<!-- Employee Major Category -->
+	<record id="view_major_category_tree" model="ir.ui.view">
+            <field name="name">hr.major.category.tree</field>
+            <field name="model">hr.major.category</field>
+            
+            <field name="arch" type="xml">
+                <tree string="Major Category">
+                    <field name="name"/>
+                    
+                </tree>
+            </field>
+        </record>
+		<record id="view_major_category_form" model="ir.ui.view">
+            <field name="name">hr.major.category.form</field>
+            <field name="model">hr.major.category</field>
+            
+            <field name="arch" type="xml">
+                <form string="Major Category">
+                    <field name="name"/>
+                    
+                </form>
+            </field>
+        </record>
+		<record id="major_category_action" model="ir.actions.act_window">
+            <field name="name">Major Category</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.major.category</field>
+            <field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_major_category_tree"/>
+            <field name="help" type="html">
+              
+            </field>
+        </record>
+        <menuitem name="Major Category"
+            action="major_category_action"
+            id="menu_major_category"
+			sequence="10" parent="hr.menu_hr_configuration" />
+			
+	<!-- Employee School -->
+	<record id="view_hr_training_school_tree" model="ir.ui.view">
+            <field name="name">hr.training.school.tree</field>
+            <field name="model">hr.training.school</field>
+            
+            <field name="arch" type="xml">
+                <tree string="Employee School">
+                    <field name="name"/>
+                    
+                </tree>
+            </field>
+        </record>
+		<record id="view_hr_training_school_form" model="ir.ui.view">
+            <field name="name">hr.training.school.form</field>
+            <field name="model">hr.training.school</field>
+            
+            <field name="arch" type="xml">
+                <form string="Employee School">
+                    <field name="name"/>
+                    
+                </form>
+            </field>
+        </record>
+		<record id="hr_training_school_action" model="ir.actions.act_window">
+            <field name="name">Employee School</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.training.school</field>
+            <field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_hr_training_school_tree"/>
+            <field name="help" type="html">
+              
+            </field>
+        </record>
+        <menuitem name="School"
+            action="hr_training_school_action"
+            id="menu_hr_training_school_action"
+			sequence="12" parent="hr.menu_hr_configuration" />
+			
+		
+		
+	<!-- Employee Job Position -->
+	<record id="view_hr_job_position_tree" model="ir.ui.view">
+            <field name="name">hr.job.position.tree</field>
+            <field name="model">hr.job.position</field>
+            
+            <field name="arch" type="xml">
+                <tree string="Job Position">
+                    <field name="name"/>
+                    <field name="sequence"/>
+                </tree>
+            </field>
+        </record>
+		<record id="view_hr_job_position_form" model="ir.ui.view">
+            <field name="name">view.hr.job.position.form</field>
+            <field name="model">hr.job.position</field>
+            
+            <field name="arch" type="xml">
+                <form string="Job Position">
+                    <field name="name"/>
+					<field name="description"/>
+					<field name="sequence"/>
+                    
+                </form>
+            </field>
+        </record>
+		<record id="view_hr_job_position_tree_action" model="ir.actions.act_window">
+            <field name="name">Job Postion</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.job.position</field>
+            <field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_hr_job_position_tree"/>
+            <field name="help" type="html">
+              
+            </field>
+        </record>
+        <menuitem name="Job Position"
+            action="view_hr_job_position_tree_action"
+            id="menu_view_hr_job_position_tree_action"
+			sequence="14" parent="hr.menu_hr_configuration" />
+			
+	</data>
+</openerp>

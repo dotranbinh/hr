@@ -1,0 +1,1183 @@
+<?xml version="1.0"?>
+<document filename="Department Report.pdf">
+  <template pageSize="(842.0,595.0)" title="Tổng hợp trình độ cán bộ công nhân viên" author="Hapro" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="20.0" y1="20.0" width="802" height="555"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+	<blockTableStyle id="HeadTable">
+      <blockAlignment value="CENTER"/>
+	  <blockBackground colorName="gray" start="0,3" stop="-1,3"/>
+      <lineStyle kind="GRID" colorName="#000000" thickness="1" start="0,0" stop="-1,-1"/>
+	  <blockSpan start="0,0" stop="0,2"/>
+	  <blockSpan start="1,0" stop="1,2"/>
+	  <blockSpan start="2,0" stop="2,2"/>
+	  <blockSpan start="3,1" stop="3,2"/>
+	  <blockSpan start="4,1" stop="4,2"/>
+	  <blockSpan start="5,1" stop="6,1"/>
+	  <blockSpan start="7,1" stop="7,2"/>
+	  <blockSpan start="8,1" stop="8,2"/>
+	  <blockSpan start="9,1" stop="9,2"/>
+	  <blockSpan start="10,1" stop="10,2"/>
+	  <blockSpan start="11,1" stop="11,2"/>
+	  <blockSpan start="12,1" stop="12,2"/>
+	  <blockSpan start="13,1" stop="13,2"/>
+	  <blockSpan start="14,1" stop="14,2"/>
+	  <blockSpan start="3,0" stop="6,0"/>
+	  <blockSpan start="7,0" stop="10,0"/>
+	  <blockSpan start="11,0" stop="14,0"/>
+	  <blockSpan start="15,0" stop="16,1"/>
+	  <blockSpan start="17,0" stop="34,0"/>
+	  <blockSpan start="35,0" stop="37,0"/>
+	  <blockSpan start="17,1" stop="18,1"/>
+	  <blockSpan start="19,1" stop="20,1"/>
+	  <blockSpan start="21,1" stop="28,1"/>
+	  <blockSpan start="29,1" stop="32,1"/>
+	  <blockSpan start="33,1" stop="34,1"/>
+	  <blockSpan start="35,1" stop="35,2"/>
+	  <blockSpan start="36,1" stop="36,2"/>
+	  <blockSpan start="37,1" stop="37,2"/>
+	  <blockSpan start="38,0" stop="38,2"/>
+    </blockTableStyle>
+	<blockTableStyle id="DefaultTable">
+      <blockAlignment value="CENTER"/>
+      <lineStyle kind="GRID" colorName="#000000" thickness="1" start="0,0" stop="-1,-1"/>
+    </blockTableStyle>
+	<initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="top-left" fontName="Helvetica-Bold" alignment="LEFT" fontSize="5.0" leftIndent = "3.0cm"/>
+    <paraStyle name="top-left-line" fontName="Helvetica" alignment="LEFT" fontSize="5.0" leftIndent = "1.0cm"/>
+    <paraStyle name="head-col" fontName="Helvetica-Bold" alignment="CENTER" fontSize="5.0"/>
+    <paraStyle name="cell" fontName="Helvetica-Bold" alignment="RIGHT" fontSize="5.0"/>
+    <paraStyle name="head-row" fontName="Helvetica" alignment="LEFT" fontSize="5.0"/>
+    <paraStyle name="top-title" fontName="Helvetica-Bold" fontSize="9.0" alignment="CENTER" spaceAfter="3.0"/>
+    <paraStyle name="time" fontName="Helvetica-Bold" fontSize="8.0" alignment="CENTER" spaceAfter="5.0"/>
+	<paraStyle name="vietnam" fontName="Helvetica-Bold" alignment="RIGHT" fontSize="5.0" rightIndent = "2.0cm"/>
+	<paraStyle name="doclap" fontName="Helvetica" alignment="RIGHT" fontSize="5.0" rightIndent = "3.0cm"/>
+    <images>
+    </images>
+  </stylesheet>
+  <story>
+    <para style="vietnam">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM
+	</para>
+    <para style="doclap">Độc lập – Tự do – Hạnh phúc
+    </para>
+    <para style="top-left">ĐƠN VỊ
+	</para>
+    <para style="top-left-line">...............................................................................
+	</para>
+    <para style="top-title">BẢNG TỔNG HỢP TRÌNH ĐỘ CÁN BỘ CÔNG NHÂN VIÊN
+    </para>
+    <para style="time">Tính đến thời điểm [[ time.strftime('%d-%m-%Y',time.strptime( time.asctime(time.gmtime()),'%a %b %d %H:%M:%S %Y' )) ]]
+    </para>
+	<blockTable colWidths="18.0,86.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,24.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,24.0,24.0,24.0,24.0,18.0,18.0,18.0,18.0,18.0,18.0,24.0,24.0,18.0,18.0,18.0,24.0" style="HeadTable">
+      <tr>
+		<td>
+          <para style="head-col">
+		TT
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+		  Bộ phận
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+		  Tổng số lao động
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+		  Trong đó
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+		  Trong đó
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+		  Trong đó
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+		  Trong đó
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+		  Tình trạng hợp đồng
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+		  Tình trạng hợp đồng
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+		  Tình trạng hợp đồng
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+		  Tình trạng hợp đồng
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+		  Kết cấu theo độ tuổi
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+		  Kết cấu theo độ tuổi
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+		  Kết cấu theo độ tuổi
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+		  Kết cấu theo độ tuổi
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+		  Số lao động được đóng BHXH
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+		  Số lao động được đóng BHXH
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+		  Trình độ chuyên môn
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+		  Trình độ chuyên môn
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+		  Trình độ chuyên môn
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+		  Trình độ chuyên môn
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+		  Trình độ chuyên môn
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+		  Trình độ chuyên môn
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+		  Trình độ chuyên môn
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+		  Trình độ chuyên môn
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+		  Trình độ chuyên môn
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+		  Trình độ chuyên môn
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+		  Trình độ chuyên môn
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+		  Trình độ chuyên môn
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+		  Trình độ chuyên môn
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+		  Trình độ chuyên môn
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+		  Trình độ chuyên môn
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+		  Trình độ chuyên môn
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+		  Trình độ chuyên môn
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+		  Trình độ chuyên môn
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+		  Trình độ ngoại ngữ
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+		  Trình độ ngoại ngữ
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+		  Trình độ ngoại ngữ
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+		  LLCT
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="head-col">
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+		  Nam
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+		  Nữ
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+			Đảng viên
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+			Đảng viên
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            Thử việc
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            Dưới 1 năm
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            1-3 năm
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            Không XĐTH
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+            18-30
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+           31-45
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            46-60
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+          >60
+          </para>
+        </td>
+		 <td>
+          <para style="head-col">
+            Nam
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            Nữ
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            Trên đại học
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+            Trên đại học
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            Đại học
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+            Đại học
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+            Đại học
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+            Đại học
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+            Đại học
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+            Đại học
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+            Đại học
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+            Đại học
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+            Đại học
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+            Đại học
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            Cao đẳng / Trung cấp
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            Cao đẳng / Trung cấp
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+          </para>
+        </td>
+        <td>
+          <para style="head-col">A
+          </para>
+        </td>
+        <td>
+          <para style="head-col">B
+          </para>
+        </td>
+        <td>
+          <para style="head-col">C
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+          </para>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <para style="head-col">
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+		  Nam
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+		  Nữ
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+		  Nam
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+		  Nữ
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            Thử việc
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            Dưới 1 năm
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            1-3 năm
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            Không XĐTH
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+            18-30
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+           31-45
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            46-60
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+          >60
+          </para>
+        </td>
+		 <td>
+          <para style="head-col">
+            Nam
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            Nữ
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            Nam
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            Nữ
+          </para>
+        </td>
+		 <td>
+          <para style="head-col">
+            Nam
+          </para>
+        </td>
+		 <td>
+          <para style="head-col">
+            Nữ
+          </para>
+        </td>
+		 <td>
+          <para style="head-col">
+            NT
+          </para>
+        </td>
+		 <td>
+          <para style="head-col">
+            TM
+          </para>
+        </td>
+		 <td>
+          <para style="head-col">
+            KTQD
+          </para>
+        </td>
+		 <td>
+          <para style="head-col">
+            HVTC
+          </para>
+        </td>
+		 <td>
+          <para style="head-col">
+            Kỹ thuật
+          </para>
+        </td>
+		 <td>
+          <para style="head-col">
+            Ngoại Ngữ
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+            Luật
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            Khác
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            Nam
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            Nữ
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            CĐ
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            TC
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            CNKT
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            LĐPT
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            A
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            B
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+            C
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+          </para>
+        </td>
+      </tr>
+	  <tr>
+        <td>
+          <para style="head-col">
+		  I
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+		 [[ data['form']['company_name'] ]]
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+		  
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+		 
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+		  
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+		 
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+           
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+          
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+           
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+         
+          </para>
+        </td>
+		 <td>
+          <para style="head-col">
+            
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+           
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+           
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+           
+          </para>
+        </td>
+		 <td>
+          <para style="head-col">
+            
+          </para>
+        </td>
+		 <td>
+          <para style="head-col">
+           
+          </para>
+        </td>
+		 <td>
+          <para style="head-col">
+           
+          </para>
+        </td>
+		 <td>
+          <para style="head-col">
+            
+          </para>
+        </td>
+		 <td>
+          <para style="head-col">
+           
+          </para>
+        </td>
+		 <td>
+          <para style="head-col">
+           
+          </para>
+        </td>
+		 <td>
+          <para style="head-col">
+           
+          </para>
+        </td>
+		 <td>
+          <para style="head-col">
+            
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+            
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+           
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+           
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+           
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            
+          </para>
+        </td>
+        <td>
+          <para style="head-col">
+            
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+            
+          </para>
+        </td>
+		<td>
+          <para style="head-col">
+          </para>
+        </td>
+		
+      </tr>
+	</blockTable>
+   <section>
+    <para>[[ repeatIn(getNameDepartment(data['form']['company_id']),'dep') ]]</para>
+	<blockTable colWidths="18.0,86.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,24.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,18.0,24.0,24.0,24.0,24.0,18.0,18.0,18.0,18.0,18.0,18.0,24.0,24.0,18.0,18.0,18.0,24.0" style="DefaultTable">
+        <tr>
+		 <td>
+          <para style="head-col">
+            [[ dep['number'] ]]
+          </para>
+        </td>
+          <td>
+          <para style="head-row">
+            [[ dep['name'] ]]
+          </para>
+        </td>
+		<td>
+		 <section> 
+		  <para>[[repeatIn(getQtyEmployee(dep['id'],data['form']['company_id']),'q')]]</para>
+		  </section>
+          <para style="cell">
+           [[ q['qty'] ]]
+          </para>
+        </td>
+		<td>
+		 <section> 
+		  <para>[[repeatIn(getQtyGender(dep['id'],data['form']['company_id'],'male'),'g')]]</para>
+		  </section>
+          <para style="cell">
+             [[ g['qty'] ]]
+          </para>
+        </td>
+		<td>
+		 <section> 
+		  <para>[[repeatIn(getQtyGender(dep['id'],data['form']['company_id'],'female'),'g')]]</para>
+		  </section>
+          <para style="cell">
+            [[ g['qty'] ]]
+          </para>
+        </td>
+		<td>
+		  <section> 
+		  <para>[[repeatIn(getQtyByCP(dep['id'],data['form']['company_id'],'male'),'cp')]]</para>
+		  </section>
+          <para style="cell">
+            [[ cp['qty'] ]]
+          </para>
+        </td>
+		<td>
+		  <section> 
+		  <para>[[repeatIn(getQtyByCP(dep['id'],data['form']['company_id'],'female'),'cp')]]</para>
+		  </section>
+          <para style="cell">
+            [[ cp['qty'] ]]
+          </para>
+        </td>
+		<td>
+		  <section> 
+		    <para>[[repeatIn(getQtyByContract(dep['id'],data['form']['company_id'],'1'),'ct')]]</para>
+		  </section>
+          <para style="cell">
+            [[ ct['qty'] ]]
+          </para>
+        </td>
+		<td>
+		 <section> 
+		   <para>[[repeatIn(getQtyByContract(dep['id'],data['form']['company_id'],'2'),'ct')]]</para>
+		  </section>
+          <para style="cell">
+            [[ ct['qty'] ]]
+          </para>
+        </td>
+		<td>
+		  <section> 
+		    <para>[[repeatIn(getQtyByContract(dep['id'],data['form']['company_id'],'3'),'ct')]]</para>
+		  </section>
+          <para style="cell">
+           [[ ct['qty'] ]]
+          </para>
+        </td>
+		<td>
+		   <section> 
+		     <para>[[repeatIn(getQtyByContract(dep['id'],data['form']['company_id'],'4'),'ct')]]</para>
+		  </section>
+          <para style="cell">
+           [[ ct['qty'] ]]
+          </para>
+        </td>
+		<td>
+		  <section> 
+		    <para>[[repeatIn(getQtyByBirthday(dep['id'],data['form']['company_id'],'18','30'),'bd')]]</para>
+		  </section>
+          <para style="cell">
+            [[ bd['qty'] ]]
+          </para>
+        </td>
+		<td>
+		 <section> 
+		    <para>[[repeatIn(getQtyByBirthday(dep['id'],data['form']['company_id'],'31','45'),'bd')]]</para>
+		  </section>
+          <para style="cell">
+            [[ bd['qty'] ]]
+          </para>
+        </td>
+		<td>
+		 <section> 
+		    <para>[[repeatIn(getQtyByBirthday(dep['id'],data['form']['company_id'],'46','60'),'bd')]]</para>
+		  </section>
+          <para style="cell">
+            [[ bd['qty'] ]]
+          </para>
+        </td>
+		<td>
+		  <section> 
+		    <para>[[repeatIn(getQtyByBirthday(dep['id'],data['form']['company_id'],'61',''),'bd')]]</para>
+		  </section>
+          <para style="cell">
+            [[ bd['qty'] ]]
+          </para>
+        </td>
+		<td>
+		 <section> 
+		    <para>[[repeatIn(getQtyByInsurance(dep['id'],data['form']['company_id'],'male'),'Ins')]]</para>
+		  </section>
+          <para style="cell">
+            [[ Ins['qty'] ]]
+          </para>
+        </td>
+		<td>
+		  <section> 
+		    <para>[[repeatIn(getQtyByInsurance(dep['id'],data['form']['company_id'],'female'),'Ins')]]</para>
+		  </section>
+          <para style="cell">
+            [[ Ins['qty'] ]]
+          </para>
+        </td>
+        <td>
+		  <section> 
+		  <para>[[repeatIn(getQtyByMajor_1( dep['id'],data['form']['company_id'],9,'male'),'q1')]]</para>
+		  </section>
+          <para style="cell">
+			[[ q1['count'] ]]
+          </para>
+        </td>
+        <td>
+		  <section> 
+		  <para>[[repeatIn(getQtyByMajor_1(dep['id'],data['form']['company_id'],9,'female'),'q2')]]</para>
+		  </section>
+          <para style="cell">
+			[[ q2['count'] ]]
+          </para>
+        </td>
+        <td>
+		  <section> 
+		  <para>[[repeatIn(getQtyByMajor_1(dep['id'],data['form']['company_id'],2,'male'),'q3')]]</para>
+		  </section>
+          <para style="cell">
+			[[ q3['count'] ]]
+          </para>
+        </td>
+        <td>
+		  <section> 
+		  <para>[[repeatIn(getQtyByMajor_1(dep['id'],data['form']['company_id'],2,'female'),'q4')]]</para>
+		  </section>
+          <para style="cell">
+			[[ q4['count'] ]]
+          </para>
+        </td>
+        <td>
+		  <section> 
+		  <para>[[repeatIn(getQtyBySchool(dep['id'],data['form']['company_id'], '1'),'sc')]]</para>
+		  </section>
+          <para style="cell">
+			[[ sc['qty'] ]]
+          </para>
+        </td>
+          <td>
+		  <section> 
+		  <para>[[repeatIn(getQtyBySchool(dep['id'], data['form']['company_id'],'2'),'sc')]]</para>
+		  </section>
+          <para style="cell">
+			[[ sc['qty'] ]]
+          </para>
+        </td>
+          <td>
+		  <section> 
+		  <para>[[repeatIn(getQtyBySchool( dep['id'],data['form']['company_id'],'3'),'sc')]]</para>
+		  </section>
+          <para style="cell">
+			[[ sc['qty'] ]]
+          </para>
+        </td>
+          <td>
+		  <section> 
+		  <para>[[repeatIn(getQtyBySchool(dep['id'],data['form']['company_id'], '4'),'sc')]]</para>
+		  </section>
+          <para style="cell">
+			[[ sc['qty'] ]]
+          </para>
+        </td>
+          <td>
+		  <section> 
+		  <para>[[repeatIn(getQtyBySchool( dep['id'],data['form']['company_id'],'5'),'sc')]]</para>
+		  </section>
+          <para style="cell">
+			[[ sc['qty'] ]]
+          </para>
+        </td>
+          <td>
+		  <section> 
+		  <para>[[repeatIn(getQtyBySchool( dep['id'],data['form']['company_id'],'6'),'sc')]]</para>
+		  </section>
+          <para style="cell">
+			[[ sc['qty'] ]]
+          </para>
+        </td>
+          <td>
+		  <section> 
+		  <para>[[repeatIn(getQtyBySchool( dep['id'],data['form']['company_id'],'7'),'sc')]]</para>
+		  </section>
+          <para style="cell">
+			[[ sc['qty'] ]]
+          </para>
+        </td>
+          <td>
+		  <section> 
+		  <para>[[repeatIn(getQtyBySchool(dep['id'],data['form']['company_id'], '8'),'sc')]]</para>
+		  </section>
+          <para style="cell">
+			[[ sc['qty'] ]]
+          </para>
+        </td>
+        <td>
+		  <section> 
+		  <para>[[repeatIn(getQtyByMajor_2(dep['id'],data['form']['company_id'],10,11,'male'),'q5')]]</para>
+		  </section>
+          <para style="cell">
+			[[ q5['count'] ]]
+          </para>
+        </td>
+        <td>
+		  <section> 
+		  <para>[[repeatIn(getQtyByMajor_2(dep['id'],data['form']['company_id'],10,11,'female'),'q6')]]</para>
+		  </section>
+          <para style="cell">
+			[[ q6['count'] ]]
+          </para>
+        </td>
+        <td>
+		  <section> 
+		  <para>[[repeatIn(getQtyByMajor_0(dep['id'],data['form']['company_id'],9),'q7')]]</para>
+		  </section>
+          <para style="cell">
+			[[ q7['count'] ]]
+          </para>
+        </td>
+        <td>
+		  <section> 
+		  <para>[[repeatIn(getQtyByMajor_0(dep['id'],data['form']['company_id'],10),'q8')]]</para>
+		  </section>
+          <para style="cell">
+			[[ q8['count'] ]]
+          </para>
+        </td>
+        <td>
+           <section> 
+		  <para>[[repeatIn(getQtyByMajor_0(dep['id'],data['form']['company_id'],11),'q15')]]</para>
+		  </section>
+          <para style="cell">
+			[[ q15['count'] ]]
+          </para>
+        </td>
+        <td>
+		  <section> 
+		  <para>[[repeatIn(getQtyByMajor_0(dep['id'],data['form']['company_id'],1),'q9')]]</para>
+		  </section>
+          <para style="cell">
+			[[ q9['count'] ]]
+          </para>
+        </td>
+        <td>
+		  <section> 
+		  <para>[[repeatIn(getQtyByMajor_0(dep['id'],data['form']['company_id'],4),'q10')]]</para>
+		  </section>
+          <para style="cell">
+			[[ q10['count'] ]]
+          </para>
+        </td>
+        <td>
+		  <section> 
+		  <para>[[repeatIn(getQtyByMajor_0(dep['id'],data['form']['company_id'],3),'q11')]]</para>
+		  </section>
+          <para style="cell">
+			[[ q11['count'] ]]
+          </para>
+        </td>
+        <td>
+		  <section> 
+		  <para>[[repeatIn(getQtyByMajor_0(dep['id'],data['form']['company_id'],7),'q12')]]</para>
+		  </section>
+          <para style="cell">
+			[[ q12['count'] ]]
+          </para>
+        </td>
+        <td>
+		  <section> 
+		  <para>[[repeatIn(getQtyByMajor(dep['id'],data['form']['company_id'],3),'q13')]]</para>
+		  </section>
+          <para style="cell">
+			[[ q13['count'] ]]
+          </para>
+        </td>
+        </tr>
+      </blockTable>
+   </section> 
+</story>
+</document>
+<!-- Note major_id: 		-->
+<!-- 1: Văn hóa				-->
+<!-- 2: Chuyên môn 			-->
+<!-- 3: Lý luận chính trị 	-->
+<!-- 4: Quản lý nhà nước 	-->
+<!-- 5: Tiếng Anh 			-->
+<!-- 6: Tin học 			-->
+
+<!-- Note diploma_level_id:	-->
+<!-- 1: Tốt nghiệp THPT		-->
+<!-- 2: Đại học				-->
+<!-- 3: B 					-->
+<!-- 4: A 					-->
+<!-- 5: Sơ cấp 				-->
+<!-- 6: Chuyên viên			-->
+<!-- 7: C 					-->
+<!-- 8: Cao học				-->
+<!--9: Cao đẳng			-->
+<!--10: Trung cấp			-->
+<!--11: CNKT -->

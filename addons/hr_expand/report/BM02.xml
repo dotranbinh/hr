@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+
+<data>
+
+    <heading1>
+        <heading1 name="ĐƠN VỊ"/>
+     </heading1>
+	<heading2>
+        <heading2 name="BẢNG THỐNG KÊ TRÌNH ĐỘ VÀ TIỀN LƯƠNG THU NHẬP CỦA CÁN BỘ QUẢN LÝ"/>
+    </heading2>
+	<heading3>
+        <heading3 name="(Chủ tịch HĐQT, Thành viên HĐQT, Ban Giám đốc, Ban Kiểm soát, Kế toán trưởng, Trưởng Phó các Phòng ban, Công ty, Trung tâm, Chi nhánh trực thuộc Công ty, Bí thư, Phó bí thư Đảng ủy, Chủ tịch Công đoàn, Bí thư Đoàn thanh niên Công ty)"/>
+    </heading3>
+	
+    <table>
+		<heading1 name="Mục">
+			<cellheading1 name="A11:A13"/>
+		</heading1>
+		<heading2 name="TT">
+			<cellheading2 name="B11:B13"/>
+		</heading2>
+		<heading3 name="Họ và tên">
+			<cellheading3 name="C11:C13"/>
+		</heading3>
+		<heading4 name="Ngày tháng năm sinh">
+			<cellheading4 name="D11:E11"/>
+		</heading4>
+		<heading5 name="Nam">
+			<cellheading5 name="D12:D13"/>
+		</heading5>
+		<heading6 name="Nữ">
+			<cellheading6 name="E12:E13"/>
+		</heading6>
+		<heading7 name="Ngày vào Đảng chính thức">
+			<cellheading7 name="F11:G11"/>
+		</heading7>
+		<heading8 name="Chức vụ Đảng,Đoàn thể">
+			<cellheading8 name="F12:F13"/>
+		</heading8>
+		<heading9 name="Chức vụ Chính quyền">
+			<cellheading9 name="G12:G13"/>
+		</heading9>
+		
+		<heading10 name="Chức vụ Chính quyền, Đảng Đoàn thể">
+			<cellheading10 name="H11:H13"/>
+		</heading10>
+		<heading11 name="Bộ phận công tác">
+			<cellheading11 name="I11:I13"/>
+		</heading11>
+		<heading12 name="Đào tạo">
+			<cellheading12 name="J11:M11"/>
+		</heading12>
+		<heading13 name="Tên trường">
+			<cellheading13 name="J12:J13"/>
+		</heading13>
+		
+		<heading14 name="Chuyên ngành">
+			<cellheading14 name="K12:K13"/>
+		</heading14>
+		
+		<heading15 name="Loại hình đào tạo">
+			<cellheading15 name="L12:L13"/>
+		</heading15>
+		<heading16 name="Trình độ văn bằng">
+			<cellheading16 name="M12:M13"/>
+		</heading16>
+		<heading17 name="Trình độ Ngoại ngữ">
+			<cellheading17 name="N11:N13"/>
+		</heading17>
+		<heading18 name="Trình độ LLCT">
+			<cellheading18 name="O11:Q11"/>
+		</heading18>
+		<heading19 name="Sơ cấp">
+			<cellheading19 name="O12:O13"/>
+		</heading19>
+		<heading20 name="Trung cấp">
+			<cellheading20 name="P12:P13"/>
+		</heading20>
+		<heading21 name="Cao cấp">
+			<cellheading21 name="Q12:Q13"/>
+		</heading21>
+		<heading22 name="Nơi ở hiện nay">
+			<cellheading22 name="R11:R13"/>
+		</heading22>
+		<heading23 name="Tiền lương bình quân năm (đồng/tháng)">
+			<cellheading23 name="S11:S13"/>
+		</heading23>
+		<heading24 name="Thu nhập bình quân năm (đồng/tháng)">
+			<cellheading24 name="T11:T13"/>
+		</heading24>
+		
+	</table>
+
+</data>

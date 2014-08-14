@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+	    <report
+		        id="report_employee"
+		        model="hr.employee"
+		        name="hr.employee.report"
+		        rml="hr_expand/report/employee_report.rml"
+		        header="False"
+                auto="False"
+		        string="Make Employee Report"/>
+	    
+        <report id="report_department"
+                model="hr.department"
+                name="hr.department.report"
+		        rml="hr_expand/report/department_report.rml"
+		        header="False"
+                auto="False"
+                string="Make Department Report" />
+           <report id="report_company"
+                model="res.company"
+                name="res.company.report"
+		        rml="hr/report/company_report.rml"
+		        header="False"
+                auto="False"
+                string="Make Company Report" />
+</data>
+</openerp>

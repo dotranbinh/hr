@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+		<!-- sale order  Form View Inherit -->
+		<record id="view_order_form_hcm_inherit" model="ir.ui.view">
+            <field name="name">view.order.form.hcm.inherit</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                
+				<xpath expr="//field[@name='user_id']" position="before">
+						
+						<field name="so_payment"  placeholder="Payment..."/>
+						<field name="so_shipment"  placeholder="Shipment..."/>
+						<field name="so_note"  placeholder="Note..."/>
+                        
+						
+					
+                </xpath>
+				<xpath expr="//button[@name='print_quotation']" position="after">
+						
+						<!-- <button name="export_2_excel" string="Export Excel" type="object"  /> -->
+						<button name="export_2_excel" string="Export Excel" type="object" states="draft" class="oe_highlight" groups="base.group_user"/>
+                        <button name="export_2_excel" string="Export Excel" type="object" states="sent" groups="base.group_user"/>
+					
+                </xpath>
+				
+				<!-- <button name="action_button_confirm"  states= "sent" position = "attributes" > 
+					<attribute name = "invisible">1</attribute>
+				</button>
+				<button name="action_button_confirm"  states= "draft" position = "attributes" > 
+					<attribute name = "invisible">1</attribute>
+				</button> -->
+            </field>
+        </record>
+		
+		<!-- <delete model="ir.ui.menu" search="[('name','=','Sales Orders')]" /> -->
+		<menuitem parent="base.menu_sales" id="menu_sale_product_suppliers_hcm"
+        name="Suppliers"    sequence="1" action="act_open_supplier_form_view_hcm" 
+       />
+		
+		
+		
+	</data>
+</openerp>

@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+
+<data>
+
+    <heading1>
+        <heading1 name="Đơn vị"/>
+     </heading1>
+	<heading2>
+        <heading2 name="BẢNG TỔNG HỢP TRÌNH ĐỘ CÁN BỘ CÔNG NHÂN VIÊN"/>
+    </heading2>
+	<heading3>
+        <heading3 name="Tính đến thời điểm"/>
+    </heading3>
+	<heading4>
+        <heading4 name="Công ty mẹ - TCT"/>
+    </heading4>
+    <table>
+		<heading1 name="TT">
+			<cellheading1 name="A11:A15"/>
+		</heading1>
+		<heading2 name="Bộ phận">
+			<cellheading2 name="B11:B15"/>
+		</heading2>
+		<heading3 name="Tổng số lao động">
+			<cellheading3 name="C11:C15"/>
+		</heading3>
+		<heading4 name="Trong đó">
+			<cellheading4 name="D11:G11"/>
+		</heading4>
+		<heading5 name="Nam">
+			<cellheading5 name="D12:D15"/>
+		</heading5>
+		<heading6 name="Nữ">
+			<cellheading6 name="E12:E15"/>
+		</heading6>
+		<heading7 name="Đảng viên">
+			<cellheading7 name="F12:G12"/>
+		</heading7>
+		<heading8 name="Nam">
+			<cellheading8 name="F13:F15"/>
+		</heading8>
+		<heading9 name="Nữ">
+			<cellheading9 name="G13:G15"/>
+		</heading9>
+		
+		<heading10 name="Tình trạng hợp đồng">
+			<cellheading10 name="H11:L11"/>
+		</heading10>
+		<heading11 name="Thời vụ">
+			<cellheading11 name="H12:H15"/>
+		</heading11>
+		<heading12 name="Thử việc">
+			<cellheading12 name="I12:I15"/>
+		</heading12>
+		<heading13 name="Dưới 1 năm">
+			<cellheading13 name="J12:J15"/>
+		</heading13>
+		
+		<heading14 name="1-3 năm">
+			<cellheading14 name="K12:K15"/>
+		</heading14>
+		
+		<heading15 name="Không XĐTH">
+			<cellheading15 name="L12:L15"/>
+		</heading15>
+		<heading16 name="Kết cấu theo độ tuổi">
+			<cellheading16 name="M11:P11"/>
+		</heading16>
+		<heading17 name="18- 30">
+			<cellheading17 name="M12:M15"/>
+		</heading17>
+		<heading18 name="31- 45">
+			<cellheading18 name="N12:N15"/>
+		</heading18>
+		<heading19 name="46- 60">
+			<cellheading19 name="O12:O15"/>
+		</heading19>
+		<heading20 name=">60">
+			<cellheading20 name="P12:P15"/>
+		</heading20>
+		<heading21 name="Số lao động được đóng BHXH">
+			<cellheading21 name="Q11:R11"/>
+		</heading21>
+		<heading22 name="Nam">
+			<cellheading22 name="Q12:Q15"/>
+		</heading22>
+		<heading23 name="Nữ">
+			<cellheading23 name="R12:R15"/>
+		</heading23>
+		<heading24 name="Trình độ chuyên môn">
+			<cellheading24 name="S11:AJ11"/>
+		</heading24>
+		<heading25 name="Trên Đại học">
+			<cellheading25 name="S12:T12"/>
+		</heading25>
+		<heading26 name="Nam">
+			<cellheading26 name="S13:S15"/>
+		</heading26>
+		<heading27 name="Nữ">
+			<cellheading27 name="T13:T15"/>
+		</heading27>
+		<heading28 name="Đại học">
+			<cellheading28 name="U12:V12"/>
+		</heading28>
+		<heading29 name="Nam">
+			<cellheading29 name="U13:U15"/>
+		</heading29>
+		<heading30 name="Nữ">
+			<cellheading30 name="V13:V15"/>
+		</heading30>
+		<heading31 name="Đại học">
+			<cellheading31 name="W12:AD12"/>
+		</heading31>
+		<heading32 name="NT">
+			<cellheading32 name="W13:W15"/>
+		</heading32>
+		<heading33 name="TM">
+			<cellheading33 name="X13:X15"/>
+		</heading33>
+		<heading34 name="KTQD">
+			<cellheading34 name="Y13:Y15"/>
+		</heading34>
+		<heading35 name="HVTC">
+			<cellheading35 name="Z13:Z15"/>
+		</heading35>
+		<heading36 name="Kỹ thuật">
+			<cellheading36 name="AA13:AA15"/>
+		</heading36>
+		<heading37 name="Ng. Ngữ">
+			<cellheading37 name="AB13:AB15"/>
+		</heading37>
+		<heading38 name="Luật">
+			<cellheading38 name="AC13:AC15"/>
+		</heading38>
+		<heading39 name="Khác">
+			<cellheading39 name="AD13:AD15"/>
+		</heading39>
+		<heading40 name="Cao đẳng/ Trung cấp">
+			<cellheading40 name="AE12:AF12"/>
+		</heading40>
+		<heading41 name="Nam">
+			<cellheading41 name="AE13:AE15"/>
+		</heading41>
+		<heading42 name="Nữ">
+			<cellheading42 name="AF13:AF15"/>
+		</heading42>
+		<heading43 name="CĐ">
+			<cellheading43 name="AG13:AG15"/>
+		</heading43>
+		<heading44 name="TC">
+			<cellheading44 name="AH13:AH15"/>
+		</heading44>
+		<heading45 name="CN Kỹ thuật">
+			<cellheading45 name="AI13:AI15"/>
+		</heading45>
+		<heading46 name="LĐPT">
+			<cellheading46 name="AJ13:AJ15"/>
+		</heading46>
+		<heading47 name="">
+			<cellheading47 name="AG12:AJ12"/>
+		</heading47>
+		<heading48 name="Trình độ ngoại ngữ">
+			<cellheading48 name="AK11:AM11"/>
+		</heading48>
+		<heading49 name="A">
+			<cellheading49 name="AK12:AK15"/>
+		</heading49>
+		<heading50 name="B">
+			<cellheading50 name="AL12:AL15"/>
+		</heading50>
+		<heading51 name="C">
+			<cellheading51 name="AM12:AM15"/>
+		</heading51>
+		<heading52 name="Điều động">
+			<cellheading52 name="AQ11:AQ15"/>
+		</heading52>
+		<heading53 name="Bổ nhiệm">
+			<cellheading53 name="AR11:AR15"/>
+		</heading53>
+		<heading54 name="Tuyển mới">
+			<cellheading54 name="AS11:AS15"/>
+		</heading54>
+		<heading55 name="Chấm dứt HĐLĐ">
+			<cellheading55 name="AT11:AT15"/>
+		</heading55>
+		<heading56 name="LLCT">
+			<cellheading56 name="AN11:AP11"/>
+		</heading56>
+		<heading57 name="SC">
+			<cellheading57 name="AN12:AN15"/>
+		</heading57>
+		<heading58 name="TC">
+			<cellheading58 name="AO12:AO15"/>
+		</heading58>
+		<heading59 name="CC">
+			<cellheading59 name="AP12:AP15"/>
+		</heading59>
+		
+	</table>
+
+</data>

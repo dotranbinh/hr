@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data noupdate="0">
+
+    <record id="group_hr_report" model="res.groups">
+        <field name="name">HR Report</field>
+       
+    </record>
+</data>
+</openerp>

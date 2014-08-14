@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+		
+		<menuitem id="menu_hr_report_general" parent="hr.menu_hr_root" name="General Report" groups="group_hr_report" />
+			<menuitem id="menu_hr_report_general_1" parent="menu_hr_report_general" name="Report Employee" />
+			<!-- <menuitem id="menu_hr_report_general_2" parent="menu_hr_report_general" name="General Report 2" /> -->
+        <record model="ir.ui.view" id="wizard_hr_report_form">
+            <field name="name">wizard.wizard.hr.report</field>
+            <field name="model">wizard.hr.report</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Report Options">
+					<group colspan="4">
+						<field name="company" widget="selection"></field>
+					</group>
+                	
+                	<group colspan="4">
+                       <field name="date_start" ></field>
+					   <field name="date_end" ></field>
+                    </group>
+                    <group colspan="4">
+                        
+						<button icon="gtk-ok" name="export_excel"
+                                string="Export Excel" type="object"/>
+						<button icon="gtk-cancel" special="cancel"
+                                type="object" string="Cancel"/>
+                        <!-- <button icon="gtk-ok" name="print_report"
+                                string="Print" type="object"/> -->
+                    </group>
+                </form>
+            </field>
+        </record>
+        
+		 <record id="general_report_1" model="ir.actions.act_window">
+            <field name="name">General report of Employee</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">wizard.hr.report</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+		<menuitem action="general_report_1" name="General report of Employee" id="menu_general_report_1" sequence="3" parent="menu_hr_report_general"/>
+        
+		
+       <record model="ir.ui.view" id="wizard_hr_bm_02_form">
+            <field name="name">wizard.hr.bm.02.form</field>
+            <field name="model">hr.wizard.bm.02</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Report Options">
+					
+                    <group colspan="4">
+                        
+						<button icon="gtk-ok" name="export_excel"
+                                string="Export Excel" type="object"/>
+						<button icon="gtk-cancel" special="cancel"
+                                type="object" string="Cancel"/>
+                        
+                    </group>
+                </form>
+            </field>
+        </record>
+        
+		 <record id="general_report_2" model="ir.actions.act_window">
+            <field name="name">BM 02</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.wizard.bm.02</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+		<menuitem action="general_report_2" name="BM 02" id="menu_general_report_2" sequence="5" parent="menu_hr_report_general"/>
+        
+		
+        
+    </data>
+</openerp>

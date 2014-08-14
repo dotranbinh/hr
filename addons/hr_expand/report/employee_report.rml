@@ -1,0 +1,491 @@
+﻿<?xml version="1.0"?>
+<document filename="test.pdf">
+  <template pageSize="(612.0,792.0)" title="Test" author="Pham Tien Hoang" allowSplitting="20">
+    <pageTemplate id="first">
+      <frame id="first" x1="30.0" y1="57.0" width="572" height="678"/>
+    </pageTemplate>
+  </template>
+  <stylesheet>
+	<blockTableStyle id="DefaultTable">
+      <blockAlignment value="CENTER"/>
+      <blockValign value="CENTER"/>
+      <lineStyle kind="GRID" colorName="#000000" thickness="1" start="0,0" stop="-1,-1"/>
+    </blockTableStyle>
+	<blockTableStyle id="Table6">
+	
+      <blockTopPadding value="0"/>
+      <blockBottomPadding value="0"/>
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+	<blockTableStyle id="Table1">
+      <blockAlignment value="LEFT"/>
+      <blockValign value="TOP"/>
+    </blockTableStyle>
+	<initialize>
+      <paraStyle name="all" alignment="justify"/>
+    </initialize>
+    <paraStyle name="P1" fontName="Helvetica" fontSize="8.0" leading="10" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P2" fontName="Helvetica" fontSize="8.0" leading="10" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="P3" fontName="Helvetica" fontSize="12.0" leading="15"/>
+    <paraStyle name="P4" fontName="Helvetica" fontSize="12.0" leading="15"/>
+    <paraStyle name="P5" fontName="Helvetica-Bold" fontSize="16.0" leading="15" alignment="CENTER" spaceBefore="5.0" spaceAfter="5.0"/>
+    <paraStyle name="P6" fontName="Helvetica" fontSize="12.0" leading="15" alignment="CENTER"/>
+    <paraStyle name="P7" fontName="Helvetica" fontSize="12.0" leading="15" alignment="JUSTIFY"/>
+    <paraStyle name="P8" fontName="Helvetica" fontSize="12.0" leading="15"/>
+    <paraStyle name="P9" fontName="Helvetica" fontSize="13.0" leading="16"/>
+    <paraStyle name="P10" fontName="Helvetica" fontSize="13.0" leading="16" alignment="JUSTIFY"/>
+    <paraStyle name="P11" fontName="Helvetica" fontSize="13.0" leading="16"/>
+    <paraStyle name="P12" fontName="Helvetica" fontSize="10.0" leading="13"/>
+    <paraStyle name="P13" fontName="Helvetica-Bold" fontSize="6.0" leading="8" alignment="CENTER"/>
+    <paraStyle name="P14" fontName="Helvetica-Bold" fontSize="12.0" leading="15" alignment="CENTER"/>
+    <paraStyle name="P15" fontName="Helvetica-Bold" fontSize="12.0" leading="15" alignment="CENTER"/>
+    <paraStyle name="P16" fontName="Helvetica" fontSize="11.0" leading="14" alignment="JUSTIFY"/>
+    <paraStyle name="P17" fontName="Helvetica" fontSize="11.0" leading="14" alignment="CENTER"/>
+    <paraStyle name="P18" fontName="Helvetica" fontSize="6.0" leading="8"/>
+    <paraStyle name="P19" fontName="Helvetica" fontSize="12.0" leading="15" alignment="JUSTIFY"/>
+    <paraStyle name="P20" fontName="Helvetica" fontSize="8.0" leading="10" alignment="CENTER"/>
+    <paraStyle name="P21" fontName="Helvetica" fontSize="12.0" leading="15" alignment="JUSTIFY" spaceBefore="5.0" spaceAfter="5.0"/>
+    <paraStyle name="P22" fontName="Helvetica" fontSize="12.0" leading="15" alignment="JUSTIFY" spaceBefore="5.0" spaceAfter="5.0"/>
+    <paraStyle name="P23" fontName="Helvetica" fontSize="12.0" leading="15" spaceBefore="5.0" spaceAfter="5.0"/>
+    <paraStyle name="P24" fontName="Helvetica" fontSize="12.0" leading="15" spaceBefore="5.0" spaceAfter="5.0"/>
+    <paraStyle name="P25" fontName="Helvetica" fontSize="12.0" leading="15" spaceBefore="5.0" spaceAfter="5.0"/>
+    <paraStyle name="P26" fontName="Helvetica" fontSize="12.0" leading="15" spaceBefore="5.0" spaceAfter="4.0"/>
+    <paraStyle name="P27" fontName="Helvetica" fontSize="12.0" leading="15" spaceBefore="5.0" spaceAfter="4.0"/>
+    <paraStyle name="P28" fontName="Helvetica" fontSize="12.0" leading="15" spaceBefore="5.0" spaceAfter="4.0"/>
+    <paraStyle name="P29" fontName="Helvetica" fontSize="12.0" leading="15" spaceBefore="5.0" spaceAfter="4.0"/>
+    <paraStyle name="P30" fontName="Helvetica" fontSize="12.0" leading="15" spaceBefore="5.0" spaceAfter="4.0"/>
+    <paraStyle name="P31" fontName="Helvetica" fontSize="10.0" leading="13" spaceBefore="5.0" spaceAfter="4.0"/>
+    <paraStyle name="P32" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica" fontSize="12.0" leading="15" spaceBefore="5.0" spaceAfter="4.0"/>
+    <paraStyle name="P33" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica" fontSize="10.0" leading="13" spaceBefore="5.0" spaceAfter="4.0"/>
+    <paraStyle name="P34" rightIndent="0.0" leftIndent="0.0" fontName="Helvetica" fontSize="10.0" leading="13" spaceBefore="5.0" spaceAfter="4.0"/>
+    <paraStyle name="P35" fontName="Helvetica" fontSize="12.0" leading="15" alignment="JUSTIFY" spaceBefore="9.0" spaceAfter="5.0"/>
+    <paraStyle name="P36" fontName="Helvetica" fontSize="12.0" leading="15" alignment="JUSTIFY" spaceBefore="9.0" spaceAfter="5.0"/>
+    <paraStyle name="P37" fontName="Helvetica" fontSize="15.0" leading="19" spaceBefore="5.0" spaceAfter="5.0"/>
+    <paraStyle name="P38" fontName="Helvetica" fontSize="12.0" leading="15" alignment="CENTER"/>
+    <paraStyle name="P39" fontName="Helvetica" fontSize="13.0" leading="16" alignment="CENTER" spaceBefore="3.0" spaceAfter="3.0"/>
+    <paraStyle name="P40" fontName="Helvetica" fontSize="12.0" leading="15" alignment="JUSTIFY" spaceBefore="3.0" spaceAfter="3.0"/>
+    <paraStyle name="P41" fontName="Helvetica" fontSize="12.0" leading="15" alignment="CENTER" spaceBefore="3.0" spaceAfter="3.0"/>
+    <paraStyle name="P42" fontName="Helvetica" fontSize="12.0" leading="15"/>
+    <paraStyle name="P43" fontName="Helvetica" fontSize="12.0" leading="15" alignment="RIGHT"/>
+    <paraStyle name="P44" fontName="Helvetica" fontSize="12.0" leading="15" spaceBefore="5.0" spaceAfter="5.0"/>
+    <paraStyle name="P45" fontName="Helvetica" fontSize="12.0" leading="15" spaceBefore="5.0" spaceAfter="5.0"/>
+    <paraStyle name="P46" fontName="Helvetica" fontSize="12.0" leading="15" spaceBefore="5.0" spaceAfter="5.0"/>
+    <paraStyle name="P47" fontName="Helvetica" fontSize="12.0" leading="15" spaceBefore="5.0" spaceAfter="5.0"/>
+    <paraStyle name="P48" fontName="Helvetica" fontSize="15.0" leading="19" alignment="CENTER"/>
+    <paraStyle name="P49" fontName="Helvetica" fontSize="15.0" leading="19" alignment="CENTER"/>
+    <paraStyle name="P50" fontName="Helvetica" fontSize="15.0" leading="19" alignment="JUSTIFY"/>
+    <paraStyle name="P51" fontName="Helvetica" fontSize="15.0" leading="19" alignment="JUSTIFY"/>
+    <paraStyle name="P52" fontName="Helvetica" fontSize="15.0" leading="19" alignment="JUSTIFY"/>
+    <paraStyle name="P53" fontName="Helvetica" fontSize="15.0" leading="19" alignment="JUSTIFY"/>
+    <paraStyle name="P54" fontName="Helvetica" fontSize="15.0" leading="19" alignment="JUSTIFY"/>
+    <paraStyle name="P55" fontName="Helvetica" fontSize="15.0" leading="19" alignment="JUSTIFY"/>
+    <paraStyle name="P56" fontName="Helvetica" fontSize="12.0" leading="15"/>
+    <paraStyle name="P57" fontName="Helvetica" fontSize="12.0" leading="15" alignment="JUSTIFY"/>
+    <paraStyle name="P58" fontName="Helvetica" fontSize="12.0" leading="15" alignment="CENTER" spaceBefore="3.0" spaceAfter="3.0"/>
+    <paraStyle name="P59" fontName="Helvetica" fontSize="13.0" leading="16" alignment="CENTER" spaceBefore="3.0" spaceAfter="3.0"/>
+    <paraStyle name="P60" fontName="Helvetica" fontSize="12.0" leading="15" spaceBefore="5.0" spaceAfter="4.0"/>
+    <paraStyle name="P61" fontName="Helvetica" fontSize="12.0" leading="15" spaceBefore="5.0" spaceAfter="4.0"/>
+    <paraStyle name="P62" fontName="Helvetica" fontSize="12.0" leading="15" spaceBefore="5.0" spaceAfter="4.0"/>
+    <paraStyle name="P63" fontName="Helvetica" fontSize="12.0" leading="15" spaceBefore="5.0" spaceAfter="4.0"/>
+    <paraStyle name="P64" fontName="Helvetica" fontSize="12.0" leading="15" spaceBefore="5.0" spaceAfter="4.0"/>
+    <paraStyle name="P65" fontName="Helvetica" fontSize="12.0" leading="15" spaceBefore="5.0" spaceAfter="4.0"/>
+    <paraStyle name="P66" fontName="Helvetica" fontSize="12.0" leading="15" alignment="CENTER" spaceBefore="3.0" spaceAfter="6.0"/>
+    <paraStyle name="P67" fontName="Helvetica" fontSize="12.0" leading="15" alignment="CENTER" spaceBefore="3.0" spaceAfter="6.0"/>
+    <paraStyle name="P68" fontName="Helvetica" fontSize="12.0" leading="15" alignment="CENTER" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="P69" fontName="Helvetica" fontSize="12.0" leading="15" alignment="CENTER" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Standard" fontName="Helvetica"/>
+    <paraStyle name="Heading" fontName="Helvetica" fontSize="14.0" leading="17" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="Text body" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="List" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Caption" fontName="Helvetica" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+    <paraStyle name="Index" fontName="Helvetica"/>
+    <paraStyle name="Normal" fontName="Helvetica" fontSize="12.0" leading="15"/>
+    <paraStyle name="Footer" fontName="Helvetica" fontSize="12.0" leading="15"/>
+    <paraStyle name="terp_header" fontName="Helvetica-Bold" fontSize="15.0" leading="19" alignment="LEFT" spaceBefore="12.0" spaceAfter="6.0"/>
+    <paraStyle name="terp_default_8" fontName="Helvetica" fontSize="12.0" leading="10" alignment="LEFT" spaceBefore="0.0" spaceAfter="0.0"/>
+	<paraStyle name="terp_default_head" fontName="Helvetica" fontSize="12.0" leading="15" alignment="LEFT" spaceBefore="5.0" spaceAfter="5.0"/>
+    <paraStyle name="terp_default_8_right" fontName="Helvetica" fontSize="12.0" leading="10" alignment="RIGHT" spaceBefore="5.0" spaceAfter="5.0"/>
+    <paraStyle name="Preformatted Text" fontName="Courier" fontSize="10.0" leading="13" spaceBefore="0.0" spaceAfter="0.0"/>
+    <paraStyle name="Frame contents" fontName="Helvetica" spaceBefore="0.0" spaceAfter="6.0"/>
+    <paraStyle name="Table Contents" fontName="Helvetica"/>
+    <paraStyle name="Table Heading" fontName="Helvetica" alignment="CENTER"/>
+    <paraStyle name="Illustration" fontName="Helvetica" fontSize="12.0" leading="15" spaceBefore="6.0" spaceAfter="6.0"/>
+	<paraStyle name="nguoi-khai" fontName="Helvetica-Bold" alignment="CENTER" fontSize="12.0" />
+	<paraStyle name="canbo-kyten" fontName="Helvetica" alignment="CENTER" fontSize="12.0" />
+	<paraStyle name="nguoikhai-kyten" fontName="Helvetica" alignment="RIGHT" fontSize="8.0" leftIndent = "1.0cm"/>
+	<paraStyle name="terp_default_thutruong_right" fontName="Helvetica-Bold" fontSize="12.0" leading="10" alignment="RIGHT" spaceBefore="5.0" spaceAfter="0.0"/>
+    <images>
+    </images>
+  </stylesheet>
+  <story>
+  
+    <para style="terp_default_head">Cơ quan đơn vị có thẩm quyền quản lý CBCC.....Số hiệu cán bộ,công chức: .......</para><para style="terp_default_8_right"></para>
+    <para style="terp_default_head">Cơ quan, đơn vị sử dụng CBCC ....................</para>
+    <para>[[repeatIn(objects,'o')]]</para>
+    <para style="P5">
+	SƠ YẾU LÝ LỊCH CÁN BỘ, CÔNG CHỨC
+	</para>
+    <blockTable colWidths="100.0,472.0" style="Table6">
+      <tr>
+        <td>
+          <illustration height="100.0" width="100.0">
+            <image x="0" y="0" height="96.0" width="96.0">[[ o.image_medium ]]</image>
+          </illustration>
+        </td>
+        <td>
+          <para style="P23">1) Họ và tên khai sinh (viết chữ in hoa): [[o.name.upper()]]</para>
+          <para style="P23">2) Tên gọi khác: [[o.other_name or '..............']]</para>
+          <para style="P23">3) Sinh ngày: [[ time.strftime('%d-%m-%Y',time.strptime(o.birthday,'%Y-%m-%d'))  ]] , Giới tính (nam, nữ):  [[ (o.gender=='male') and 'Nam' or (o.gender=='female') and 'Nữ' ]]</para>
+          <para style="P23">4) Nơi sinh: [[o.birthplace_id_txt or '..............' ]] </para>
+          <para style="P23">5) Quê quán: [[o.hometown_id_txt or '..............' ]] </para>
+        </td>
+      </tr>
+    </blockTable>
+    <para style="P26">6) Dân tộc: [[o.ethnic_id.name or '..............' ]], 7) Tôn giáo: [[o.religion_id.name or '..............' ]]</para>
+    <para style="P26">8) Nơi đăng ký hộ khẩu thường trú: [[o.permanent_address_id_txt or '..............']]</para>
+    <para style="P26">9) Nơi ở hiện nay: [[o.address_home_id_txt or '..............' ]] </para>
+    <para style="P26">10) Nghề nghiệp khi được tuyển dụng: [[o.last_job or '..............' ]] </para>
+    <para style="P26">11) Ngày tuyển dụng: [[ (o.date=='False') and '.../.../....' or  time.strftime('%d-%m-%Y',time.strptime(o.recruitment_date,'%Y-%m-%d'))  ]] Cơ quan tuyển dụng: [[o.recruitment_agency.name or '..............']]</para>
+    <para style="P26">12) Chức vụ (chức danh) hiện tại: [[ o.job_id.name  or '..............' ]]</para>
+    <para style="P26">13) Công việc chính được giao: [[o.key_task or '..............' ]]</para>
+    <section> 
+		<para>[[repeatIn(get_latest_salary(o.id),'n')]]</para> 
+		<para style="P26">14) Ngạch công chức (viên chức): [[ n['name'] or '..............' ]], Mã ngạch:[[ n['code'] or '..............'  ]]  </para>
+    <para style="P26">Bậc lương:  [[ n['wage'] or '..............' ]], Hệ số:  [[ n['cost'] or '..............' ]], Ngày hưởng: [[time.strftime('%d-%m-%Y',time.strptime( n['date'] ,'%Y-%m-%d')) or '..............']] , Phụ cấp chức vụ:[[ n['allowance']  or '..............' ]], Phụ cấp khác: [[ n['other_allowance'] or '..............' ]]</para>
+	</section>
+    
+    <para style="P26">15.1- Trình độ giáo dục phổ thông: [[ o.general_education or '..............']]</para>
+    <para style="P34">(đã tốt nghiệp lớp mấy/thuộc hệ nào)</para>
+	<para style="P26">15.2- Trình độ chuyên môn cao nhất: [[ o.highest_diploma  or '..............' ]]</para>
+    <para style="P34">(TSKH, TS, ThS, cử nhận, cao đẳng, trung cấp, sơ cấp; chuyên ngành)</para>
+	<para style="P26">15.3- Lý luận chính trị: [[ o.political_theory or '..............' ]]</para>
+    <para style="P34">(Cao cấp, trung cấp, sơ cấp và tương đương)</para>
+    <para style="P26">15.4- Quản lý nhà nước: [[ o.state_management  or '..............' ]]</para>
+    <para style="P34">(Chuyên viên cao cấp, chuyên viên chính, chuyên viên, cán sự....)</para>
+   
+	<para style="P26">15.5- Ngoại ngữ: [[ o.foreign_language  or '..............' ]]</para>
+    <para style="P34">(Tên ngoại ngữ + Trình độ A, B, C, D...)</para>
+    
+	<para style="P26">15.6- Tin học: [[ o.it  or '..............' ]]</para>
+    <para style="P34">(Trình độ A, B, C,...)</para>
+    <para style="P26">16) Ngày vào Đảng Cộng sản Việt Nam: [[(o.CP_join_date=='False') and '..............' or time.strftime('%d-%m-%Y',time.strptime(o.CP_join_date,'%Y-%m-%d'))]], Ngày chính thức: [[(o.CP_official_join_date=='False') and '..............' or time.strftime('%d-%m-%Y',time.strptime(o.CP_official_join_date,'%Y-%m-%d'))]] </para>
+    <para style="P26">17) Ngày tham gia tổ chức chính trị - xã hội: [[o.sociopolitical_organization_id.name or '..............']] [[(o.sopo_organization_join_date=='False') and '..............' or time.strftime('%d-%m-%Y',time.strptime(o.sopo_organization_join_date,'%Y-%m-%d'))]]</para>
+    <para style="P34">(Ngày tham gia tổ chức: Đoàn, Hội, ... và làm việc gì trong tổ chức đó).</para>
+    <para style="P26">18) Ngày nhập ngũ: [[(o.enlistment_date=='False') and '..............' or time.strftime('%d-%m-%Y',time.strptime(o.enlistment_date,'%Y-%m-%d'))]] Ngày xuất ngũ: [[(o.demobilized_date=='False') and '..............' or time.strftime('%d-%m-%Y',time.strptime(o.demobilized_date,'%Y-%m-%d'))]] Quân hàm cao nhất: [[o.highest_army_rank_id and o.highest_army_rank_id.name or '..............']]</para>
+    <para style="P26">19) Danh hiệu được phong tặng cao nhất: [[o.highest_reward_rank]]</para>
+    <para style="P34">(Anh hùng lao động, anh hùng lực lượng vũ trang, nhà giáo, thấy thuốc, nghệ sĩ nhân dân và ưu tú ...)</para>
+    <para style="P26">20) Sở trường công tác: [[o.major or '..............']]</para>
+    <para style="P26">21) Khen thưởng:</para>
+	<section> 
+		<para>[[repeatIn(get_latest_reward(o.id),'r')]]</para> 
+		
+		<para style="P26">Hình thức cao nhất:[[r['name'] or '..............']], Năm khen thưởng: [[time.strftime('%d-%m-%Y',time.strptime( r['year'] ,'%Y-%m-%d')) or '..............']] </para>
+	</section>
+	
+    
+    
+    <para style="P26">22) Kỷ luật: </para>
+	<section> 
+		<para>[[repeatIn(get_latest_punishment(o.id),'p')]]</para> 
+		<para style="P26">Hình thức kỷ luật cao nhất: [[p['name'] or '..............']], Năm kỷ luật: [[time.strftime('%d-%m-%Y',time.strptime( p['year'] ,'%Y-%m-%d')) or '..............']] </para>
+		
+	</section>
+    
+    <para style="P26">23)  Tình trạng sức khỏe: [[o.health[0].name]] </para>
+	<para style="P26">Chiều cao: [[o.health[0].height or '..............']] (m),Cân nặng:[[o.health[0].weight or '..............']]	(kg),Nhóm máu : [[o.health[0].blood or '..............']]</para>
+    <para style="P26">24) Là thương binh hạng: [[o.wound.name or '..............']], Là con gia đình chính sách: [[o.wound.type or '..............']]</para>
+    <para style="P34">(Con thương binh, con liệt sĩ, người nhiễm chất đọc da cam Dioxin)</para>
+	<para style="P26">25) Số chứng minh thư nhân dân: [[o.identification_id or '..............']], Ngày cấp :[[(o.date=='False') and '..............' or time.strftime('%d-%m-%Y',time.strptime(o.date,'%Y-%m-%d'))]] </para>
+	<para style="P26">26) Số sổ bảo hiểm xã hội: [[o.sinid or '..............']]</para>
+    <para style="P15">27) ĐÀO TẠO, BỒI DƯỠNG VỀ CHUYÊN MÔN, NGHIỆP VỤ, LÝ LUẬN CHÍNH TRỊ, NGOẠI NGỮ</para>
+    
+	<blockTable colWidths="172.0,100.0,100.0,100.0,100.0" style="DefaultTable">
+      <tr>
+        <td>
+          <para style="P4">
+            Tên trường
+          </para>
+        </td>
+        <td>
+          <para style="P4">
+            Chuyên ngành đào tạo
+			bồi dưỡng
+          </para>
+        </td>
+        <td>
+          <para style="P4">
+            Từ tháng,năm
+          </para>
+		  <para style="P4">
+            đến tháng,năm
+          </para>
+          
+        </td>
+        <td>
+          <para style="P4">
+            Hình thức đào tạo
+          </para>
+        </td>
+		<td>
+          <para style="P4">
+            Văn bằng chứng chỉ
+          </para>
+        </td>
+        
+      </tr>
+    </blockTable>
+    <section>
+      <para>[[ repeatIn(o.training_id,'edu') ]]</para>
+      <blockTable colWidths="172.0,100.0,100.0,100.0,100.0" style="DefaultTable">
+        <tr>
+          <td>
+          <para style="P4">
+            [[ edu.school.name]]  
+          </para>
+        </td>
+        <td>
+          <para style="P4">
+            [[ edu.major]]  
+          </para>
+        </td>
+        <td>
+          <para style="P4">
+            [[ time.strftime('%m/%Y',time.strptime(edu.from_time,'%Y-%m-%d')) ]]
+            [[ time.strftime('%m/%Y',time.strptime(edu.to_time,'%Y-%m-%d')) ]]
+          </para>
+        </td>
+        <td>
+          <para style="P4">
+            [[ edu.training_form ]]  
+          </para>
+        </td>
+        <td>
+          <para style="P4">
+            [[ edu.diploma ]]  
+          </para>
+        </td>
+        </tr>
+      </blockTable>
+    </section>
+	<para style="P15">28) TÓM TẮT QUÁ TRÌNH CÔNG TÁC</para>
+    <blockTable colWidths="100.0,472.0" style="DefaultTable">
+      <tr>
+        <td>
+          <para style="P4">Từ tháng, năm đến tháng, năm</para>
+        </td>
+        <td>
+          <para style="P4">Chức danh, chức vụ, đơn vị công tác (đảng, chính quyền, đoàn thể, tổ chức xã hội), kể cả thời gian được đào tạo, bồi dưỡng về chuyên môn, nghiệp vụ...</para>
+        </td>
+      </tr>
+    </blockTable>
+	<section>
+      <para>[[repeatIn(o.works_id,'work') ]]</para>
+      <blockTable colWidths="100.0,472.0" style="DefaultTable">
+        <tr>
+          <td>
+          <para style="P4">
+           [[ time.strftime('%m/%Y',time.strptime(work.from_time,'%Y-%m-%d')) ]]
+            [[ time.strftime('%m/%Y',time.strptime(work.to_time,'%Y-%m-%d')) ]]
+          </para>
+        </td>
+        <td>
+          <para style="P4">
+           [[work.note]]
+          </para>
+        </td>
+        </tr>
+      </blockTable>
+    </section>
+    <para style="P15">29) ĐẶC ĐIỂM LỊCH SỬ BẢN THÂN</para>
+    <para style="P26">- Khai rõ: bị bắt, bị tù  (từ ngày tháng năm nào đến ngày tháng năm nào, ở đâu) , đã khai báo cho ai, những vấn đề gì ? Bản thân có làm việc trong chế độ cũ  (cơ quan, đơn vị nào, địa điểm, chức danh, chức vụ, thời gian làm việc ...)</para>
+    <para style="P26"> [[o.detention or '..................................................................................................']]</para>
+    <para style="P26">- Tham gia hoặc có quan hệ với các tổ chức chính trị, kinh tế, xã hội nào ở nước ngoài(làm gì, tổ chức nào, đặt trụ sở ở đâu ...?) </para>
+    <para style="P26"> [[o.rw_frcompany or '..................................................................................................']]</para>
+    <para style="P26">- Có thân nhân (Bố, Mẹ, Vợ, Chồng, con, anh chị em ruột) ở nước ngoài (làm gì, địa chỉ ...) ? </para>
+    <para style="P26"> [[o.rw_frperson or '..................................................................................................']]</para>
+	<para style="P15">30) QUAN HỆ GIA ĐÌNH</para>
+    <para style="P15">  a) Về bản thân: Bố, Mẹ, Vợ (hoặc chồng), các con, anh chị em ruột</para>
+    <blockTable colWidths="100.0,100.0,100.0,272.0" style="DefaultTable">
+      <tr>
+        <td>
+          <para style="P4">
+            Mối quan hệ  
+          </para>
+        </td>
+        <td>
+          <para style="P4">
+            Họ và tên  
+          </para>
+        </td>
+        <td>
+          <para style="P4">
+            Năm sinh
+          </para>
+		</td>
+		<td>
+          <para style="P4">
+            Quê quán, nghề nghiệp, chức danh, chức vụ, đơn vị, công tác, học tập, nơi ở (trong, ngoài nước); thành viên các tổ chức chính trị-xã hội ...
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <section>
+      <para>[[ repeatIn(get_relationship(o.id,'FALSE'),'rel') ]]</para>
+      <blockTable colWidths="100.0,100.0,100.0,272.0" style="DefaultTable">
+        <tr>
+          <td>
+			  <para style="P4">
+				[[ rel['type'] ]]
+			  </para>
+			</td>
+			<td>
+			  <para style="P4">
+				[[ rel['full_name'] ]]
+			  </para>
+			</td>
+			<td>
+			  <para style="P4">
+				[[ time.strftime('%Y',time.strptime(rel['birth_date'],'%Y-%m-%d')) ]]
+			  </para>
+			</td>
+			<td>
+			  <para style="P4">
+				[[ rel['additional_information'] ]]
+			  </para>
+			</td>
+        </tr>
+      </blockTable>
+    </section>
+    <para style="P15">  b) Về bên vợ (hoặc chồng):  Cha, Mẹ anh chị em ruột</para>
+    <blockTable colWidths="100.0,100.0,100.0,272.0" style="DefaultTable">
+      <tr>
+        <td>
+          <para style="P4">
+            Mối quan hệ  
+          </para>
+        </td>
+        <td>
+          <para style="P4">
+            Họ và tên  
+          </para>
+        </td>
+        <td>
+          <para style="P4">
+            Năm sinh
+          </para>
+		</td>
+		<td>
+          <para style="P4">
+            Quê quán, nghề nghiệp, chức danh, chức vụ, đơn vị, công tác, học tập, nơi ở (trong, ngoài nước); thành viên các tổ chức chính trị-xã hội ...
+          </para>
+        </td>
+      </tr>
+    </blockTable>
+    <section>
+      <para>[[ repeatIn(get_relationship(o.id,'TRUE'),'rel_inlaw') ]]</para>
+      <blockTable colWidths="100.0,100.0,100.0,272.0" style="DefaultTable">
+        <tr>
+          <td>
+			  <para style="P4">
+				[[ rel_inlaw['type'] ]]
+			  </para>
+			</td>
+			<td>
+			  <para style="P4">
+				[[ rel_inlaw['full_name'] ]]
+			  </para>
+			</td>
+			<td>
+			  <para style="P4">
+				[[ time.strftime('%Y',time.strptime(rel_inlaw['birth_date'],'%Y-%m-%d')) ]]
+			  </para>
+			</td>
+			<td>
+			  <para style="P4">
+				[[ rel_inlaw['additional_information'] ]]
+			  </para>
+			</td>
+        </tr>
+      </blockTable>
+    </section>
+    <para style="P15">31) DIỄN BIẾN QUÁ TRÌNH LƯƠNG CỦA CÁN BỘ, CÔNG CHỨC</para>
+    <blockTable colWidths="100.0,300.0,172.0" style="DefaultTable">
+      <tr>
+        <td>
+          <para style="P4">
+            Tháng/năm 
+          </para>
+        </td>
+		<td>
+          <para style="P4">
+            Ngạch/Bậc
+          </para>
+      </td>
+        <td>
+          <para style="P4">
+           Hệ số lương
+          </para>
+		</td>
+      </tr>
+    </blockTable>
+    <section>
+      <para> [[ repeatIn(o.salarys_id,'salary') ]]</para>
+      <blockTable colWidths="100.0,300.0,172.0" style="DefaultTable">
+        <tr>
+          <td>
+			  <para style="P4">
+				  [[ time.strftime('%m/%Y',time.strptime(salary.date,'%Y-%m-%d')) ]]
+			  </para>
+			</td>
+			<td>
+			  <para style="P4">
+				[[ salary['wage'] ]]
+			  </para>
+			</td>
+			<td>
+			  <para style="P4">
+				[[ salary['cost'] ]]
+			  </para>
+			</td>	
+        </tr>
+      </blockTable>
+	  </section>
+    <para style="P15">32) NHẬN XÉT, ĐÁNH GIÁ CỦA CƠ QUAN, ĐƠN VỊ QUẢN LÝ VÀ SỬ DỤNG CÁN BỘ, CÔNG CHỨC</para>
+	<para style="P26">
+	 [[o.comment or '........................................................................................']]
+	</para>
+	<para style="terp_default_8_right">
+       ..............., Ngày ........ tháng ....... năm ......
+	</para>
+	
+	
+	<blockTable colWidths="250.0,350.0" style="Table1">
+      <tr>
+        <td>
+       
+    <para style="nguoi-khai">
+       Người khai
+	   </para>
+	   <para  style="canbo-kyten">
+	   Tôi xin cam đoan những
+	   lời khai trên đây là đúng sự thật
+	   (Ký tên, ghi rõ họ tên)
+	</para>
+	
+        </td>
+        
+        <td>
+  <para style="nguoi-khai">
+       Thủ trưởng cơ quan, đơn vị quản lý và sử dụng
+	    CBCC
+	   </para>
+	   <para style="canbo-kyten">
+	  
+	   (Ký tên, đóng dấu)
+    </para>
+        </td>
+      </tr>
+    </blockTable>
+  </story>
+</document>

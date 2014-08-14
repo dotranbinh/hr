@@ -1,0 +1,8 @@
+import product
+import sale
+import res_partner
+import res_partner_fix
+import res_company
+import product_supplier
+import account_invoice
+import quotation_excel
