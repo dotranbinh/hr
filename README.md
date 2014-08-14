@@ -1,4 +1,4 @@
 hr
 =============
 
-HR addons
+HR addons for Odoo
